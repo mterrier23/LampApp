@@ -21,8 +21,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 </head>
 <body>
     <div class="page-header">
-        <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
-		<p>Here is your information: ENTER FNAME LNAME EMAIL </p>
+        <h1>Hi, <?php echo htmlspecialchars($_SESSION["fname"]); ?> <?php echo htmlspecialchars($_SESSION["lname"]); ?> . Welcome to our site.</h1>
+		<p>Your email is <?php echo htmlspecialchars($_SESSION["email"]); ?></p>
     </div>
     <p>
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
